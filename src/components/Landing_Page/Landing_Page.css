@@ -8,11 +8,11 @@
 
 @font-face {
     font-family: "cooper-black";
-    src: url(/assests/fonts/COOPBL.woff);
+    src: url(/src/assests/fonts/COOPBL.woff);
 }
 
 body {
-    background-image: url(/assests/images/bg.png);
+    background-image: url(/src/assests/images/bg.png);
     background-size: cover;
 }
 

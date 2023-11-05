@@ -1,11 +1,11 @@
-body {
+/* body {
     background-image: url(/assests/images/bg.png);
     background-size: cover;
-  }
+  } */
   
   @font-face {
     font-family: "cooper-black";
-    src: url(/assests/fonts/COOPBL.woff);
+    src: url(/src/assests/fonts/COOPBL.woff);
   }
   
   .container {
@@ -31,7 +31,7 @@ body {
     float: left;
   }
   
-  input {
+  input .form-control {
     height: 20px;
     width: 300px;
     border: 1px solid #000;
@@ -149,7 +149,7 @@ body {
     color: #fff;
   }
   
-  button {
+  .submit, .reset {
     /* position:; */
     /* display: ; */
     transition: all 0.5s ease-in-out;

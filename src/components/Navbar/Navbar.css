@@ -6,23 +6,23 @@ nav {
     top: 0%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 97%;
     display: flex;
     align-items: center;
     justify-content: space-between;    
 }
 
 body{
-    background-image: url(/assests/images/bg.png);
+    background-image: url(/src/assests/images/bg.png);
     background-size: cover;
 }
 
 @font-face {
     font-family: "cooper-black";
-    src: url(/assests/fonts/COOPBL.woff);
+    src: url(/src/assests/fonts/COOPBL.woff);
 }
 
-h1 {
+h1  {
     color: #4C4B4D;
     text-align: center;
     font-family: "cooper-black";
@@ -31,6 +31,8 @@ h1 {
     font-weight: 400;
     line-height: normal;
     margin: 10px;
+    margin-left: 10px;
+    /* cursor: pointer; */
 }
 
 img {
@@ -45,7 +47,7 @@ img {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 25px;
+    margin-top: 0px;
     font-size: 22px;
     font-weight: 500;   
     font-family: 'Crimson Pro', serif; 
@@ -54,6 +56,7 @@ img {
 
 .link a {
     text-decoration: none;
+    font-family: 'Crimson Pro', serif; 
     padding: 0 1rem;
     color: #4C4B4D;
     transition: 0.3s;
@@ -123,6 +126,8 @@ img {
     padding: 5px 35px;
     font-size: 19px;
     cursor: pointer;
+    /* margin-left: 10px; */
+    margin-top: 0px;
 }
 
 .btn1:hover {
@@ -134,13 +139,12 @@ img {
     
 }
 
-.btn2 {
+/* .btn2 {
     font-family: 'Crimson Pro', serif;
     border: 2px solid #B67EDA;
     background-color: transparent;
     color: #4C4B4D;
     border-radius: 50px;
-    /* padding: 30px; */
     padding: 5px 35px;
     font-size: 19px;
 }
@@ -148,5 +152,5 @@ img {
 .btn2:hover {
     background-color: #3685fb;
     color: white;
-}
+} */
 
