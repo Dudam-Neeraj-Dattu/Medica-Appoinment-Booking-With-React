@@ -49,6 +49,9 @@ const Navbar = () => {
             setUsername(storedemail);
         }
     }, []);
+
+    // document.getElementById('sign-in').innerText = 'Welcome' + username;
+
     return (
         <section className="navbar">
             <nav>
@@ -72,7 +75,12 @@ const Navbar = () => {
                     {isLoggedIn ? (
                         <>
                             <li className="link">
-                                <button className="btn2" onClick={handleLogout}>
+                                <Link to="/Login">
+                                    <button className="btn1 sign-up" id="sign-in"></button>
+                                </Link>
+                            </li>
+                            <li className="link">
+                                <button className="btn1 login" onClick={handleLogout}>
                                     Logout
                                 </button>
                             </li>
@@ -81,13 +89,13 @@ const Navbar = () => {
                     ) : (
                         <>
                             <li className="link">
-                                <Link to="../Sign_Up">
-                                    <button className="btn1">Sign Up</button>
+                                <Link to="../Sign_Up">  
+                                    <button className="btn1 sign-up">Sign Up</button>
                                 </Link>
                             </li>
                             <li className="link">
                                 <Link to="/Login">
-                                    <button className="btn1">Login</button>
+                                    <button className="btn1 login">Login</button>
                                 </Link>
                             </li>
                         </>
