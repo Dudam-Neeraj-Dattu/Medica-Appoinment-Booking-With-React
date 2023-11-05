@@ -1,0 +1,152 @@
+/** Header - Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500&display=swap');
+nav {
+    /* padding: 1.5rem; */
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+body{
+    background-image: url(/assests/images/bg.png);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "cooper-black";
+    src: url(/assests/fonts/COOPBL.woff);
+}
+
+h1 {
+    color: #4C4B4D;
+    text-align: center;
+    font-family: "cooper-black";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px;
+}
+
+img {
+    /* transform: translateY(25%);     */
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 500;   
+    font-family: 'Crimson Pro', serif; 
+    
+}
+
+.link a {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: #4C4B4D;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: #B67EDA;
+    transform: translateY(-5%);
+    transition: 0.5s;
+}
+
+/* Media queries for mobile responsiveness */
+
+@media (max-width: 768px) {
+    .nav__logo {
+        margin-right: auto;
+    }
+
+    .nav__icon {
+        display: block;
+    }
+
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .nav__links.active {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        animation: slideDown 0.5s ease-in-out;
+    }
+}
+
+/* Animation keyframes*/
+@keyframes slideDown {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btn1 {
+    font-family: 'Crimson Pro', serif;
+    border: 2px solid #B67EDA;
+    background-color: transparent;
+    color: #4C4B4D;
+    border-radius: 50px;
+    padding: 5px 35px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: #B67EDA;
+    color: white;
+    transform: translateY(-5%);
+    transition: 0.5s;
+    opacity: 0.9;
+    
+}
+
+.btn2 {
+    font-family: 'Crimson Pro', serif;
+    border: 2px solid #B67EDA;
+    background-color: transparent;
+    color: #4C4B4D;
+    border-radius: 50px;
+    /* padding: 30px; */
+    padding: 5px 35px;
+    font-size: 19px;
+}
+
+.btn2:hover {
+    background-color: #3685fb;
+    color: white;
+}
+
